@@ -6,7 +6,7 @@ namespace ConsoleAppProject.App01
     /// Please describe the main features of this App
     /// </summary>
     /// <author>
-    /// Derek version 0.1
+    /// Nicole Bebb version 0.1
     /// </author>
     public class DistanceConverter
     {
@@ -17,7 +17,7 @@ namespace ConsoleAppProject.App01
         private string number;
 
         /// <summary>
-        /// This method will output a heading, ask dfor the
+        /// This method will output a heading, ask for the
         /// input for miles, calculate and output the same
         /// distance in feet.
         /// </summary>
@@ -35,10 +35,10 @@ namespace ConsoleAppProject.App01
             Console.ForegroundColor = ConsoleColor.Green;
 
             Console.WriteLine();
-            Console.WriteLine(" ========================");
-            Console.WriteLine("    Distance Converter   ");
-            Console.WriteLine("        by Derek         ");
-            Console.WriteLine(" ========================");
+            Console.WriteLine("    ===============================");
+            Console.WriteLine("       App01: Distance Converter   ");
+            Console.WriteLine("            by Nicole Bebb         ");
+            Console.WriteLine("    ===============================");
             Console.WriteLine();
         }
 
