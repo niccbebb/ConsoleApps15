@@ -17,20 +17,18 @@ namespace ConsoleAppProject
     {
         public static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Blue;
 
             Console.WriteLine();
-            Console.WriteLine("    =================================================");
+            Console.WriteLine("   =================================================");
             Console.WriteLine("      BNU CO453 Applications Programming 2021-2022! ");
             Console.WriteLine("                  by Nicole Bebb                    ");
             Console.WriteLine("   =================================================");
             Console.WriteLine();
 
 
-            DistanceConverter converter = new DistanceConverter();
-            converter.Run();
-
-            Console.ForegroundColor = ConsoleColor.White;
+            DistanceConverter app01 = new DistanceConverter();
+            app01.Run();
         }
     }
 }
