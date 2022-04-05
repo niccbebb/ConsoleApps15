@@ -22,7 +22,6 @@ namespace ConsoleAppProject.App04
         public void Run()
         {
             AddMessgae();
-
         }
 
         private void AddMessgae()
