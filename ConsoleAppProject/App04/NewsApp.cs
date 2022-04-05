@@ -6,19 +6,19 @@ namespace ConsoleAppProject.App04
 {
     public class NewsApp
     {
-        public NewsFeed NewsFeed { get; set; }
+        public NewsList NewsList { get; set; } = new NewsList();
 
-        string [] choices =
+        string[] choices =
         {
             "Add a Messgae Post",
             "Add a Photo Post",
             "Display All Post",
-            "Find A Post",
             "Remove A Post",
-            "Add Comments",
+            "Add Comments to s post",
             "Like A Post",
             "Unlike A Post"
-        }
+        };
+
         public void Run()
         {
             AddMessgae();
@@ -34,7 +34,7 @@ namespace ConsoleAppProject.App04
             string message = Console.ReadLine();
 
             MessagePost post = new MessagePost(name, message);
-            NewsFeed.AddPost(post);
+            NewsList.AddPost(post);
         }
     }
 }

@@ -18,23 +18,21 @@ namespace ConsoleAppProject.App04
     ///  Michael Kölling and David J. Barnes
     ///  version 0.1
     ///</author> 
-    public class NewsFeed
+    public class NewsList
     {
         public List<Post> PostList { get; set; }
+
 
         ///<summary>
         /// Construct an empty news feed.
         ///</summary>
-        public NewsFeed()
+        public NewsList()
         {
             PostList = new List<Post>();
         }
 
-
         ///<summary>
-        /// Add a text post to the news feed.
-        /// 
-        /// @param text  The text post to be added.
+        ///Post list to feed.
         ///</summary>
         public void AddPost(Post post)
         {
@@ -51,10 +49,9 @@ namespace ConsoleAppProject.App04
             foreach (Post post in PostList)
             {
                 post.Display();
-                Console.WriteLine();   // empty line between posts
+                Console.WriteLine();
             }
 
         }
     }
-
 }

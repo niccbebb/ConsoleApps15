@@ -20,8 +20,7 @@ namespace ConsoleAppProject.App04
         public String Filename { get; set; }
         
         // a one line image caption
-        public String Caption { get; set; }   
-        
+        public String Caption { get; set; }
 
         ///<summary>
         /// Constructor for objects of class PhotoPost.

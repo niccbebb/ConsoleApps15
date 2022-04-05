@@ -1,5 +1,4 @@
 ﻿using ConsoleAppProject.App01;
-using ConsoleAppProject.App02;
 using ConsoleAppProject.App03;
 using ConsoleAppProject.App04;
 using ConsoleAppProject.Helpers;
@@ -36,9 +35,6 @@ namespace ConsoleAppProject
             {
                 case 1: DistanceConverter app01 = new DistanceConverter();
                     app01.Run();break;
-
-                case 2: BMI calculator = new BMI(); calculator.Run();
-                    break;
 
                 case 3: StudentGrades grades = new StudentGrades();
                     grades.Run();break;
