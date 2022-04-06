@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using ConsoleAppProject.Helpers;
 
 namespace ConsoleAppProject.App04
 {
@@ -16,12 +17,42 @@ namespace ConsoleAppProject.App04
             "Remove A Post",
             "Add Comments to s post",
             "Like A Post",
-            "Unlike A Post"
+            "Unlike A Post",
+            "Quit A Post"
         };
 
         public void Run()
         {
-            AddMessgae();
+            MessagePost message = new MessagePost("nicole", "hello");
+            NewsList.AddPost(message);
+
+            bool quit = false;
+            while (!quit)
+                {
+                    int choice = ConsoleHelper.SelectChoice(choices);
+                    if (choice == 1)
+                    {
+                        AddMessgae();
+                    }
+                    else if (choice == 2)
+                    {
+                        AddPhoto();
+                    }
+                    else if (choice == 3)
+                    {
+                        DisplayPosts();
+                    }
+                }
+        }
+
+        private void DisplayPosts()
+        {
+            NewsList.Display();
+        }
+
+        private void AddPhoto()
+        {
+            throw new NotImplementedException();
         }
 
         private void AddMessgae()
@@ -29,7 +60,7 @@ namespace ConsoleAppProject.App04
             Console.Write(" Please enter your name > ");
             string name = Console.ReadLine();
 
-            Console.Write(" Please enter your name > ");
+            Console.Write(" Please enter your message > ");
             string message = Console.ReadLine();
 
             MessagePost post = new MessagePost(name, message);

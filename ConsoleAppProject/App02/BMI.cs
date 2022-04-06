@@ -33,10 +33,9 @@ public class BMICalculator
 
     // Properties for height and weight in etric units.
     // Weight = kilograms (kg); height = centimetres (cm)
-    public double Kilograms
-    {
-        get; set: }
-        public double Centimetres { get; set; }
+    public double Kilograms { get; set; }
+    
+    public double Centimetres { get; set; }
 
     // Properties for user's BMI.
     public double User_BMI { get; set; }
@@ -67,14 +66,14 @@ public class BMICalculator
         Console.WriteLine(" Which unit type would you like to use?");
 
         string[] choices = { EnumHelper<UnitSystems>.GetName(UnitSystems.Imperial),
-                EnumHelper < uint = UnitSystems >.GetName(UnitSystems.Metric) };
+                EnumHelper < UnitSystems >.GetName(UnitSystems.Metric) };
 
         int choice = ConsoleHelper.SelectChoice(choices);
 
         if (choice == 1)
         {
-            GetImperialInput();
-            CalculateImperial();
+            //GetImperialInput();
+            //CalculateImperial();
 
         }
         else if (choice == 2)
@@ -84,7 +83,7 @@ public class BMICalculator
         }
         else
         {
-            ConsoleWriteLine(" Invalid choice. Please try again.");
+            Console.WriteLine(" Invalid choice. Please try again.");
             SelectUnits();
         }
     }
@@ -153,7 +152,7 @@ public class BMICalculator
         message.Append("If you are Black, Asian, or in another minority " +
             "ethnic group, you have a higher health risk.");
         message.Append("\n\tAdults with BMI od 23.0 or over " + "are at increased risk.");
-        message.Append("\n\tAdults with a BMI of 27.5 or over " + "are at high risk.");\
+        message.Append("\n\tAdults with a BMI of 27.5 or over " + "are at high risk.");
 
             return message.ToString();
     }
